@@ -1,0 +1,58 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6" id="userDetail">
+           <div><h3 class="">Current date:  {{todayDate | date:'fullDate'}} </h3></div>
+           <div><img src="assets/images/ouchtati.png"/></div>
+        </div>
+        <div class="col-lg-6" id="changeInfo">
+            <div>
+                <button class="changeCountryColor" >
+                    <h3 (click)="changeCountryText()" [ngClass]="{'btn btn-info': !toggleCountry}">Click to change the color of my home Country  </h3>
+                </button></div>
+            <div>
+                <button class="changeEmailColor">
+                    <h3 (click)="changeEmailText()" [ngClass]="{'btn btn-info': !toggleEmail}">Click to change the color of my Sheridan Email  </h3>
+                </button></div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6" style="background-color: white;">
+           <div id="userDetail">
+               <p class="">
+                <label>Full name:{{firstName}} {{lastName}}
+                </label>
+            </p>
+          </div>  
+          <div id="userDetail">
+            <p class="">
+             <label>My home country :<span [ngClass]="{'btn btn-danger': !toggleCountry}">{{countryName}}</span>
+             </label>
+            </p>
+       </div>
+       <div id="userDetail">
+        <p class="">
+         <label>My Email : <span [ngClass]="{'btn btn-danger': !toggleEmail}">{{countryEmail}}</span>
+         </label>
+        </p>
+       </div>  
+      </div>
+    
+        <div class="col-lg-6" id="provieDetail" >
+            <div class="">
+                    <h3 id="province-text">Enter Province Where You study</h3>
+                    <input type="text"  placeholder="enter your province"/>
+            </div>
+            <div>
+                
+                    <h3 id="province-text" style="margin-top: 3%">{{studentNumber}} ,{{firstName}} {{lastName}}, study in {{province}} </h3>
+                 
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="container">
+
+</div>

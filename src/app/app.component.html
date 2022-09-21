@@ -1,0 +1,22 @@
+<!-- <div *ngFor="let info of MyInfo">
+    <span>{{info.getName()}} -   <span>{{info.getYearlySalary()}} 
+    
+     
+  <div> -->
+    <div>
+      <app-header
+    [myInfo]="MyInfo"></app-header>
+    </div>
+
+    <div>
+      <app-content
+      [myInfo]="MyInfo">
+      </app-content>
+    </div>
+    
+    <div>
+      <app-footer
+    [myInfo]="MyInfo"></app-footer>
+    </div>
+    
+     
